@@ -17,5 +17,5 @@ router.get("/notes", (req, res) => {
     res.sendFile(notesHtmlPath);
 });
 
-
+// export module
 module.exports = router;

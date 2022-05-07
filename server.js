@@ -12,12 +12,12 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 
 // Sets up the middleware to handle data parsing
+
+app.use(express.static("public"));
+app.use(express.json());
+
 app.use(webRouter);
 app.use(apiRouter);
-app.use(express.static("public"));
-
-
-
 
 
 
